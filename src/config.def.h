@@ -3,7 +3,7 @@
 /*
  * appearance
  *
- * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+ * font:  http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Hack Nerd Font Mono:pixelsize=12:antialias=true:autohint=true";
 static int borderpx = 2;
@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.6, alphaUnfocused = 0.4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -138,6 +138,7 @@ unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
 unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 257;
+unsigned int bg = 16, bgUnfocused = 16;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
