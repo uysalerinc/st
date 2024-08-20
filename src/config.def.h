@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack Nerd Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Hack Nerd Font Mono:pixelsize=12:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -103,20 +103,20 @@ static const char *colorname[] = {
     [1] = "#ff5555", /* red     */
     [2] = "#50fa7b", /* green   */
     [3] = "#f1fa8c", /* yellow  */
-    [4] = "#bd93f9", /* blue    */
+    [4] = "#caa9fa", /* blue    */
     [5] = "#ff79c6", /* magenta */
     [6] = "#8be9fd", /* cyan    */
-    [7] = "#bbbbbb", /* white   */
+    [7] = "#bfbfbf", /* white   */
                                   
     /* 8 bright colors */
-    [8]  = "#44475a", /* black   */
-    [9]  = "#ff5555", /* red     */
-    [10] = "#50fa7b", /* green   */
-    [11] = "#f1fa8c", /* yellow  */
-    [12] = "#bd93f9", /* blue    */
-    [13] = "#ff79c6", /* magenta */
-    [14] = "#8be9fd", /* cyan    */
-    [15] = "#ffffff", /* white   */
+    [8]  = "#575b70", /* black   */
+    [9]  = "#ff6e67", /* red     */
+    [10] = "#5af78e", /* green   */
+    [11] = "#f4f99d", /* yellow  */
+    [12] = "#caa9fa", /* blue    */
+    [13] = "#ff92d0", /* magenta */
+    [14] = "#9aedfe", /* cyan    */
+    [15] = "#e6e6e6", /* white   */
                                    
     /* special colors */
     [256] = "#282a36", /* background */
