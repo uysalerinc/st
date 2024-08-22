@@ -80,6 +80,7 @@ typedef union {
 
 void die(const char *, ...);
 void redraw(void);
+void tfulldirt(void);
 void draw(void);
 
 void printscreen(const Arg *);
@@ -135,4 +136,4 @@ extern char urlchars[];
 extern char *urlprefixes[];
 extern int nurlprefixes;
 
-extern float alpha;
+extern float alpha, alphaUnfocused;
