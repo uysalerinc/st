@@ -8,10 +8,11 @@
   outputs = { self, nixpkgs }: {
     packages.x86_64-linux.default = nixpkgs.legacyPackages.x86_64-linux.stdenv.mkDerivation {
       name = "st";
-      src = "${self}/src";
+      src = self + "/src"; # Point to the `src` directory in your repository
 
       nativeBuildInputs = with nixpkgs.legacyPackages.x86_64-linux; [
         pkg-config
+        ncurses # Add ncurses for the `tic` command
       ];
 
       buildInputs = with nixpkgs.legacyPackages.x86_64-linux; [
