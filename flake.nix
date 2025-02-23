@@ -8,13 +8,18 @@
   outputs = { self, nixpkgs }: {
     packages.x86_64-linux.default = nixpkgs.legacyPackages.x86_64-linux.stdenv.mkDerivation {
       name = "st";
-      src = "${self}/src";
+      src = self;
+
+      nativeBuildInputs = with nixpkgs.legacyPackages.x86_64-linux; [
+        pkg-config
+      ];
 
       buildInputs = with nixpkgs.legacyPackages.x86_64-linux; [
         xorg.libX11
         xorg.libXft
         freetype
         fontconfig
+        xorg.libXrender
       ];
 
       prePatch = ''
