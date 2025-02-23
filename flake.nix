@@ -8,7 +8,7 @@
   outputs = { self, nixpkgs }: {
     packages.x86_64-linux.default = nixpkgs.legacyPackages.x86_64-linux.stdenv.mkDerivation {
       name = "st";
-      src = self;
+      src = "${self}/src";
 
       nativeBuildInputs = with nixpkgs.legacyPackages.x86_64-linux; [
         pkg-config
